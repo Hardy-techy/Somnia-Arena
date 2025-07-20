@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Deep space black with cosmic depth */
+  --color-background: #0a0a0f;
+  --color-foreground: #ffffff;
+
+  /* Rich cosmic surfaces */
+  --color-card: #1a1a2e;
+  --color-card-foreground: #ffffff;
+
+  --color-popover: #1a1a2e;
+  --color-popover-foreground: #ffffff;
+
+  /* Electric neon accents */
+  --color-primary: #00d4ff;
+  --color-primary-foreground: #0a0a0f;
+
+  --color-secondary: #8b5cf6;
+  --color-secondary-foreground: #ffffff;
+
+  --color-muted: #1a1a2e;
+  --color-muted-foreground: #b4b4c7;
+
+  /* Electric green for special highlights */
+  --color-accent: #00ff88;
+  --color-accent-foreground: #0a0a0f;
+
+  --color-destructive: #ff1744;
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: #2a2a3e;
+  --color-input: #1a1a2e;
+  --color-ring: #00d4ff;
+
+  /* Vibrant chart colors */
+  --color-chart-1: #00d4ff;
+  --color-chart-2: #8b5cf6;
+  --color-chart-3: #00ff88;
+  --color-chart-4: #ff6b35;
+  --color-chart-5: #ff1744;
+
+  /* Enhanced sidebar with cosmic theme */
+  --color-sidebar: #1a1a2e;
+  --color-sidebar-foreground: #b4b4c7;
+  --color-sidebar-primary: #00d4ff;
+  --color-sidebar-primary-foreground: #0a0a0f;
+  --color-sidebar-accent: #8b5cf6;
+  --color-sidebar-accent-foreground: #ffffff;
+  --color-sidebar-border: #2a2a3e;
+  --color-sidebar-ring: #00d4ff;
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  
+  /* Stunning Gaming Color Palette */
+  --color-background-primary: #0a0a0f;
+  --color-background-secondary: #1a1a2e;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b4b4c7;
+  --color-accent-electric-blue: #00d4ff;
+  --color-accent-purple: #8b5cf6;
+  --color-accent-electric-green: #00ff88;
+  --color-accent-neon-orange: #ff6b35;
+  --color-accent-neon-pink: #ff2d92;
+
+  /* Typography */
+  --font-display: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #2a2a3e;
+  }
+}
+
+@layer utilities {
+  body {
+    font-family: var(--font-body);
+  }
+}
+
+@layer base {
+  :root {
+    --background: var(--color-background-primary);
+    --foreground: var(--color-text-primary);
+    --card: var(--color-background-secondary);
+    --card-foreground: var(--color-text-primary);
+    --popover: var(--color-background-secondary);
+    --popover-foreground: var(--color-text-primary);
+    --primary: var(--color-accent-electric-blue);
+    --primary-foreground: var(--color-background-primary);
+    --secondary: var(--color-accent-purple);
+    --secondary-foreground: var(--color-text-primary);
+    --muted: var(--color-background-secondary);
+    --muted-foreground: var(--color-text-secondary);
+    --accent: var(--color-accent-electric-green);
+    --accent-foreground: var(--color-background-primary);
+    --destructive: #ff1744;
+    --destructive-foreground: #ffffff;
+    --border: var(--color-border);
+    --input: var(--color-input);
+    --ring: var(--color-ring);
+    --chart-1: var(--color-accent-electric-blue);
+    --chart-2: var(--color-accent-purple);
+    --chart-3: var(--color-accent-electric-green);
+    --chart-4: var(--color-accent-neon-orange);
+    --chart-5: var(--color-accent-neon-pink);
+    --radius: 0.5rem;
+    --sidebar-background: var(--color-background-secondary);
+    --sidebar-foreground: var(--color-text-secondary);
+    --sidebar-primary: var(--color-accent-electric-blue);
+    --sidebar-primary-foreground: var(--color-background-primary);
+    --sidebar-accent: var(--color-accent-purple);
+    --sidebar-accent-foreground: var(--color-text-primary);
+    --sidebar-border: var(--color-border);
+    --sidebar-ring: var(--color-ring);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    line-height: 1.2;
+  }
+
+  p {
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--color-accent-electric-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  a:hover {
+    color: var(--color-accent-electric-green);
+    text-shadow: 0 0 8px var(--color-accent-electric-green);
+  }
+
+  body {
+    background: linear-gradient(135deg, var(--color-background-primary) 0%, var(--color-background-secondary) 100%);
+    color: var(--color-text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  /* Add some cosmic glow effects */
+  .neon-glow {
+    text-shadow: 0 0 10px var(--color-accent-electric-blue), 0 0 20px var(--color-accent-electric-blue), 0 0 30px var(--color-accent-electric-blue);
+  }
+
+  .purple-glow {
+    text-shadow: 0 0 10px var(--color-accent-purple), 0 0 20px var(--color-accent-purple);
+  }
+
+  .green-glow {
+    text-shadow: 0 0 10px var(--color-accent-electric-green), 0 0 20px var(--color-accent-electric-green);
+  }
+}
