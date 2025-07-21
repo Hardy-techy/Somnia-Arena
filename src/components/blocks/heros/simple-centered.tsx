@@ -30,7 +30,7 @@ export default function SimpleCentered() {
               <img 
                 src="/Images/logoooo.png" 
                 alt="SomniArena Logo" 
-                className="h-48 w-auto group-hover:scale-110 transition-transform duration-300 object-contain"
+                className="h-16 sm:h-24 md:h-32 lg:h-48 w-auto group-hover:scale-110 transition-transform duration-300 object-contain"
               />
             </a>
           </div>
