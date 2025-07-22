@@ -5,8 +5,8 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Menu, X, Pickaxe, Bot } from 'lucide-react'
 
 const navigation = [
-  { name: 'Faucet', href: '#' },
-  { name: 'About', href: '#' },
+  { name: 'Faucet', href: 'https://testnet.somnia.network/' },
+  { name: 'Dev', href: 'https://x.com/0xhardyy' },
 ]
 
 export default function SimpleCentered() {
@@ -142,7 +142,7 @@ export default function SimpleCentered() {
                 
                 <div className="relative z-10 text-center">
                   <div className="rounded-2xl border-2 border-[#00d4ff]/40 group-hover:shadow-lg transition-all duration-300 mb-6 inline-block overflow-hidden">
-                    <img src="/Images/minesimage.jpg" alt="STT Mines Thumbnail" className="h-40 w-40 object-cover rounded-none mx-auto shadow-none" />
+                    <img src="/Images/minescellimage.jpg" alt="STT Mines Thumbnail" className="h-40 w-40 object-cover rounded-none mx-auto shadow-none" />
                   </div>
                   <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#00d4ff] to-white bg-clip-text font-display mb-3">
                     STT Mines
