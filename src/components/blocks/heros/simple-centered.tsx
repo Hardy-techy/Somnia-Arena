@@ -134,7 +134,7 @@ export default function SimpleCentered() {
           {/* Game Tiles */}
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto relative z-20">
             {/* STT Mines Tile */}
-            <div className="group cursor-pointer">
+            <a href="https://sttmines.somniaarena.fun" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
               <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0f] border-2 border-[#00d4ff]/20 hover:border-[#00d4ff] rounded-2xl p-6 hover:shadow-[0_0_30px_rgba(0,212,255,0.3)] transition-all duration-500 overflow-hidden transform hover:scale-108 hover:-translate-y-4">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/10 via-transparent to-[#8b5cf6]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
@@ -153,10 +153,10 @@ export default function SimpleCentered() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
             {/* Tic Tac Toe vs AI Tile */}
-            <div className="group cursor-pointer">
+            <a href="https://tictactoe.somniaarena.fun" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
               <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0f] border-2 border-[#00ff88]/20 hover:border-[#00ff88] rounded-2xl p-6 hover:shadow-[0_0_30px_rgba(0,255,136,0.3)] transition-all duration-500 overflow-hidden transform hover:scale-108 hover:-translate-y-4">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#00ff88]/10 via-transparent to-[#8b5cf6]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
@@ -175,7 +175,7 @@ export default function SimpleCentered() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         
