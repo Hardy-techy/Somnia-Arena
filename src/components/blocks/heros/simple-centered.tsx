@@ -135,12 +135,14 @@ export default function SimpleCentered() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto relative z-20">
             {/* STT Mines Tile */}
             <a href="https://sttmines.somniaarena.fun" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
-              <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0f] border-2 border-[#00d4ff]/20 hover:border-[#00d4ff] rounded-2xl p-6 hover:shadow-[0_0_30px_rgba(0,212,255,0.3)] transition-all duration-500 overflow-hidden transform hover:scale-108 hover:-translate-y-4">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/10 via-transparent to-[#8b5cf6]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0f] border-2 border-[#00d4ff]/20 hover:border-[#00d4ff] rounded-2xl p-6 transition-all duration-500 overflow-hidden transform
+                hover:shadow-[0_0_30px_rgba(0,212,255,0.3)] hover:scale-108 hover:-translate-y-4
+                shadow-[0_0_30px_rgba(0,212,255,0.15)] scale-100 -translate-y-0 sm:shadow-none sm:scale-100 sm:translate-y-0">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/10 via-transparent to-[#8b5cf6]/5 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <div className="relative z-10 text-center">
                   <div className="rounded-2xl border-2 border-[#00d4ff]/40 group-hover:shadow-lg transition-all duration-300 mb-6 inline-block overflow-hidden">
-                    <img src="/Images/minesleo.jpg" alt="STT Mines Thumbnail" className="h-40 w-40 object-cover rounded-none mx-auto shadow-none" />
+                    <img src="/Images/minesthumbnail.jpg" alt="STT Mines Thumbnail" className="h-40 w-40 object-cover rounded-none mx-auto shadow-none" />
                   </div>
                   <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#00d4ff] to-white bg-clip-text font-display mb-3">
                     STT Mines
@@ -157,8 +159,10 @@ export default function SimpleCentered() {
 
             {/* Tic Tac Toe vs AI Tile */}
             <a href="https://tictactoe.somniaarena.fun" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
-              <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0f] border-2 border-[#00ff88]/20 hover:border-[#00ff88] rounded-2xl p-6 hover:shadow-[0_0_30px_rgba(0,255,136,0.3)] transition-all duration-500 overflow-hidden transform hover:scale-108 hover:-translate-y-4">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00ff88]/10 via-transparent to-[#8b5cf6]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0f] border-2 border-[#00ff88]/20 hover:border-[#00ff88] rounded-2xl p-6 transition-all duration-500 overflow-hidden transform
+                hover:shadow-[0_0_30px_rgba(0,255,136,0.3)] hover:scale-108 hover:-translate-y-4
+                shadow-[0_0_30px_rgba(0,255,136,0.15)] scale-100 -translate-y-0 sm:shadow-none sm:scale-100 sm:translate-y-0">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#00ff88]/10 via-transparent to-[#8b5cf6]/5 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <div className="relative z-10 text-center">
                   <div className="p-1 rounded-2xl bg-gradient-to-br from-[#00ff88]/20 to-[#8b5cf6]/10 border border-[#00ff88]/30 group-hover:shadow-lg transition-all duration-300 mb-6 inline-block">
