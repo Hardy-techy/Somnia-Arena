@@ -132,7 +132,7 @@ export default function SimpleCentered() {
           </div>
 
           {/* Game Tiles */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto relative z-20">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto relative z-20">
             {/* STT Mines Tile */}
             <a href="https://sttmines.somniaarena.fun" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
               <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0f] border-2 border-[#00d4ff]/20 hover:border-[#00d4ff] rounded-2xl p-6 transition-all duration-500 overflow-hidden transform
@@ -141,14 +141,14 @@ export default function SimpleCentered() {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/10 via-transparent to-[#8b5cf6]/5 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <div className="relative z-10 text-center">
-                  <div className="rounded-2xl border-2 border-[#00d4ff]/40 group-hover:shadow-lg transition-all duration-300 mb-6 inline-block overflow-hidden">
-                    <img src="/Images/minescellimage.jpg" alt="STT Mines Thumbnail" className="h-40 w-40 object-cover rounded-none mx-auto shadow-none" />
+                  <div className="p-0.5 rounded-2xl bg-gradient-to-br from-[#00d4ff]/20 to-[#8b5cf6]/10 border border-[#00d4ff]/30 group-hover:shadow-lg transition-all duration-300 mb-6 inline-block">
+                    <img src="/Images/minesnewthumb.jpg" alt="STT Mines Thumbnail" className="h-40 w-40 object-cover rounded-xl mx-auto shadow-lg" />
                   </div>
                   <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#00d4ff] to-white bg-clip-text font-display mb-3">
                     STT Mines
                   </h3>
                   <p className="text-[#b4b4c7] mb-4 leading-relaxed">
-                    Play the mines game—choose your tiles, avoid the mines, and multiply your STT tokens!
+                    Choose tiles, avoid mines, multiply STT tokens!
                   </p>
                   <div className="inline-block px-3 py-1 rounded-full bg-[#00d4ff]/20 text-[#00d4ff] text-sm font-semibold">
                     Strategy • Logic • Earn STT
@@ -176,6 +176,30 @@ export default function SimpleCentered() {
                   </p>
                   <div className="inline-block px-3 py-1 rounded-full bg-[#00ff88]/20 text-[#00ff88] text-sm font-semibold">
                     AI Battle • Strategy • Earn STT
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            {/* Flappy Bird Tile */}
+            <a href="https://flappybird.somniaarena.fun" target="_blank" rel="noopener noreferrer" className="group cursor-pointer">
+              <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0f] border-2 border-[#8b5cf6]/20 hover:border-[#8b5cf6] rounded-2xl p-6 transition-all duration-500 overflow-hidden transform
+                hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] hover:scale-108 hover:-translate-y-4
+                shadow-[0_0_30px_rgba(139,92,246,0.15)] scale-100 -translate-y-0 sm:shadow-none sm:scale-100 sm:translate-y-0">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#8b5cf6]/10 via-transparent to-[#00d4ff]/5 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative z-10 text-center">
+                  <div className="p-1 rounded-2xl bg-gradient-to-br from-[#8b5cf6]/20 to-[#00d4ff]/10 border border-[#8b5cf6]/30 group-hover:shadow-lg transition-all duration-300 mb-6 inline-block">
+                    <img src="/Images/thubnailflappy.jpg" alt="Flappy Bird Thumbnail" className="h-40 w-40 object-cover rounded-xl mx-auto shadow-lg" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-[#8b5cf6] to-white bg-clip-text font-display mb-3">
+                    Flappy Bird
+                  </h3>
+                  <p className="text-[#b4b4c7] mb-4 leading-relaxed">
+                    Play the classic flappy bird game and climb the leaderboard!
+                  </p>
+                  <div className="inline-block px-3 py-1 rounded-full bg-[#8b5cf6]/20 text-[#8b5cf6] text-sm font-semibold">
+                    Arcade • Fun • Classic
                   </div>
                 </div>
               </div>
